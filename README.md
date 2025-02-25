@@ -1,5 +1,5 @@
 # Double Pendulum on a Cart Equilibrium Transition Solver
-Author: Marvin Ahlborn
+Author: Marvin Ahlborn</br>
 Date: 2025-02-25
 
 This code solves the two-point boundary value problem (TPBVP) that is the
@@ -31,7 +31,7 @@ Parallelization was used for looking for initial guesses. Four processes
 employed random search and then multiple shooting independently and wrote
 the results in a separate file each.
 
-Lessons learned:
+## Lessons learned:
 Multiple shooting can't do miracles: It's better than single shooting but
 finding a solution is still dependent on a good initial guess.
 
