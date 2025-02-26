@@ -2,7 +2,7 @@
 Author: Marvin Ahlborn</br>
 Date: 2025-02-25
 
-tl;dr If you just want to see the final result run "choreography.m".
+![](https://github.com/MarvinAhl/double-pendulum/choreography.gif)
 
 This code solves the two-point boundary value problem (TPBVP) that is the
 necessary optimality conditions for the double pendulum on a cart. They
