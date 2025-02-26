@@ -2,7 +2,7 @@
 Author: Marvin Ahlborn</br>
 Date: 2025-02-25
 
-![](https://github.com/MarvinAhl/double-pendulum/choreography.gif)
+<img src="https://github.com/MarvinAhl/double-pendulum/blob/main/choreography.gif" alt="An animated gif showing three transitions between the equilibrium states." width="500"/>
 
 This code solves the two-point boundary value problem (TPBVP) that is the
 necessary optimality conditions for the double pendulum on a cart. They
