@@ -51,7 +51,8 @@ tspan = linspace(t0, tf, frames3);
 xhistory = [xhistory1; xhistory2; xhistory3];
 frames = frames1 + frames2 + frames3;
 
-animate(xhistory, frames, dt, L1, L2, M1, M2, m, g);
+savevideo = false;
+animate(xhistory, frames, dt, L1, L2, M1, M2, m, g, savevideo);
 
 % ====================== Functions ===========================
 
@@ -85,7 +86,7 @@ function [x, lambda, xhistory, lambdahistory] = flowy(x0, lambda0, tspan, L1, L2
     lambdahistory = y(:, 7:12);
 end
 
-function animate(x, frames, dt, L1, L2, M1, M2, m, g)
+function animate(x, frames, dt, L1, L2, M1, M2, m, g, savevideo)
     figure();
     
     % Draw pendulum
@@ -137,5 +138,9 @@ function animate(x, frames, dt, L1, L2, M1, M2, m, g)
         ylim([-window_size_y, window_size_y])
     
         drawnow
+
+        if (savevideo)
+            exportgraphics(gcf, 'choreography.gif', 'Append', true);
+        end
     end
 end
